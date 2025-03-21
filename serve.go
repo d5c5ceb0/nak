@@ -4,16 +4,23 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	"math"
+	//"math"
 	"os"
 	"time"
 
 	"github.com/bep/debounce"
 	"github.com/fatih/color"
-	"github.com/fiatjaf/eventstore/slicestore"
+	//"github.com/fiatjaf/eventstore/slicestore"
+	//"github.com/fiatjaf/eventstore/sqlite3"
+	"github.com/fiatjaf/eventstore/postgresql"
 	"github.com/fiatjaf/khatru"
 	"github.com/nbd-wtf/go-nostr"
 	"github.com/urfave/cli/v3"
+)
+
+const (
+    dbpath = "/tmp/eventstore-test"
+    mysql = ""
 )
 
 var serve = &cli.Command{
@@ -38,7 +45,18 @@ var serve = &cli.Command{
 		},
 	},
 	Action: func(ctx context.Context, c *cli.Command) error {
-		db := slicestore.SliceStore{MaxLimit: math.MaxInt}
+		//db := slicestore.SliceStore{MaxLimit: math.MaxInt}
+        //db := sqlite3.SQLite3Backend{DatabaseURL: dbpath + "sqlite", QueryLimit: 1000, QueryTagsLimit: 50, QueryAuthorsLimit: 2000}
+        db := postgresql.PostgresBackend {
+            DatabaseURL: "postgres://zhangwei:123456@localhost:5432/postgres?sslmode=disable", 
+            QueryLimit: 1000,
+            QueryTagsLimit: 50,
+            QueryAuthorsLimit: 2000,
+        }
+        if err := db.Init(); err != nil {
+            return fmt.Errorf("failed to initialize database: %w", err)
+        }
+
 
 		var scanner *bufio.Scanner
 		if path := c.String("events"); path != "" {
