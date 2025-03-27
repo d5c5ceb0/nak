@@ -24,6 +24,7 @@ require (
 )
 
 require (
+	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/ImVexed/fasturl v0.0.0-20230304231329-4e41488060f3 // indirect
 	github.com/andybalholm/brotli v1.1.1 // indirect
 	github.com/btcsuite/btcd v0.24.2 // indirect
@@ -41,16 +42,21 @@ require (
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/elliotchance/pie/v2 v2.7.0 // indirect
 	github.com/elnosh/gonuts v0.3.1-0.20250123162555-7c0381a585e3 // indirect
+	github.com/ethereum/go-ethereum v1.15.5 // indirect
 	github.com/fasthttp/websocket v1.5.12 // indirect
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
+	github.com/go-sql-driver/mysql v1.8.1 // indirect
+	github.com/gogo/protobuf v1.3.2 // indirect
+	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/hablullah/go-hijri v1.0.2 // indirect
 	github.com/hablullah/go-juliandays v1.0.0 // indirect
+	github.com/holiman/uint256 v1.3.2 // indirect
 	github.com/jalaali/go-jalaali v0.0.0-20210801064154-80525e88d958 // indirect
+	github.com/jmoiron/sqlx v1.4.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.10 // indirect
-	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/magefile/mage v1.14.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
@@ -69,9 +75,25 @@ require (
 	github.com/valyala/fasthttp v1.59.0 // indirect
 	github.com/wasilibs/go-re2 v1.3.0 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
+	go.etcd.io/etcd/api/v3 v3.5.20 // indirect
+	go.etcd.io/etcd/client/pkg/v3 v3.5.20 // indirect
+	go.etcd.io/etcd/client/v3 v3.5.20 // indirect
+	go.uber.org/atomic v1.7.0 // indirect
+	go.uber.org/multierr v1.6.0 // indirect
+	go.uber.org/zap v1.17.0 // indirect
 	golang.org/x/arch v0.15.0 // indirect
 	golang.org/x/crypto v0.36.0 // indirect
 	golang.org/x/net v0.37.0 // indirect
 	golang.org/x/sys v0.31.0 // indirect
 	golang.org/x/text v0.23.0 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20240318140521-94a12d6c2237 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240318140521-94a12d6c2237 // indirect
+	google.golang.org/grpc v1.64.1 // indirect
+	google.golang.org/protobuf v1.36.2 // indirect
 )
+
+replace github.com/nbd-wtf/go-nostr => ../go-nostr
+
+replace github.com/fiatjaf/khatru => ../khatru
+
+replace github.com/fiatjaf/eventstore => ../eventstore
