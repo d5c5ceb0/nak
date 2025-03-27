@@ -57,6 +57,12 @@ github.com/coreos/go-semver v0.3.0 h1:wkHLiw0WNATZnSG7epLsujiMCgPAc9xhjJ4tgnAxmf
 github.com/coreos/go-semver v0.3.0/go.mod h1:nnelYz7RCh+5ahJtPPxZlU+153eP4D4r3EedlOD2RNk=
 github.com/coreos/go-systemd/v22 v22.5.0 h1:RrqgGjYQKalulkV8NGVIfkXQf6YYmOyiJKk8iXXhfZs=
 github.com/coreos/go-systemd/v22 v22.5.0/go.mod h1:Y58oyj3AT4RCenI/lSvhwexgC+NSVTIJ3seZv2GcEnc=
+github.com/d5c5ceb0/eventstore v0.16.5 h1:e/k6OcpMOY0/kpji2mNeXijtJhsUlhZdimxwyGAa7yY=
+github.com/d5c5ceb0/eventstore v0.16.5/go.mod h1:gdamAZGfzScREZaeEQt/D/2d96/7gqDMhFOEfY+zScw=
+github.com/d5c5ceb0/go-nostr v0.51.6 h1:Fvg2kjMPZkocmweT2zDdSgfrhKVUxpzauRRLksW9JiE=
+github.com/d5c5ceb0/go-nostr v0.51.6/go.mod h1:CjUOYCaUdUdbkXXK0b5XO+Tvge0bZFjltEs84Wdpv3s=
+github.com/d5c5ceb0/khatru v0.17.6 h1:7ghuwhO9gl7unAd8/cDr+uHKM4bxpKudetqkaoodYB8=
+github.com/d5c5ceb0/khatru v0.17.6/go.mod h1:qsMxkBBsh6kbZfRdIhjUiUw89qK1JksQ0weul7Jwbvw=
 github.com/davecgh/go-spew v0.0.0-20171005155431-ecdeabc65495/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=

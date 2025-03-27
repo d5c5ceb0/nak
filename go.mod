@@ -94,8 +94,8 @@ require (
 	google.golang.org/protobuf v1.36.2 // indirect
 )
 
-replace github.com/nbd-wtf/go-nostr => ../go-nostr
+replace github.com/nbd-wtf/go-nostr => github.com/d5c5ceb0/go-nostr v0.51.6
 
-replace github.com/fiatjaf/khatru => ../khatru
+replace github.com/fiatjaf/khatru => github.com/d5c5ceb0/khatru v0.17.6
 
-replace github.com/fiatjaf/eventstore => ../eventstore
+replace github.com/fiatjaf/eventstore => github.com/d5c5ceb0/eventstore v0.16.5
