@@ -37,6 +37,8 @@ require (
 	github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1 // indirect
 	github.com/cloudwego/base64x v0.1.5 // indirect
 	github.com/coder/websocket v1.8.13 // indirect
+	github.com/coreos/go-semver v0.3.0 // indirect
+	github.com/coreos/go-systemd/v22 v22.5.0 // indirect
 	github.com/decred/dcrd/crypto/blake256 v1.1.0 // indirect
 	github.com/dgraph-io/ristretto v1.0.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
@@ -92,8 +94,8 @@ require (
 	google.golang.org/protobuf v1.36.2 // indirect
 )
 
-replace github.com/nbd-wtf/go-nostr => ../go-nostr
+replace github.com/nbd-wtf/go-nostr => github.com/d5c5ceb0/go-nostr v1.51.8
 
-replace github.com/fiatjaf/khatru => ../khatru
+replace github.com/fiatjaf/khatru => github.com/d5c5ceb0/khatru v1.17.4
 
-replace github.com/fiatjaf/eventstore => ../eventstore
+replace github.com/fiatjaf/eventstore => github.com/d5c5ceb0/eventstore v0.16.5
